@@ -133,7 +133,7 @@ void keyboard_func (unsigned char key, int x, int y) {
 	switch (key) {
 		case ' ':
 			if(c==0) { 
-				c=(rand()%4+1)*90/2; 
+				c=(rand()%4+5)*90/2; 
 				rxi=(rand()%2?1:-1)*2;
 				ryi=(rand()%2?1:-1)*2;
 				rzi=(rand()%2?1:-1)*2; 
@@ -178,7 +178,6 @@ int main(int argc, char *argv[]) {
 		rz[i]=(rand()%4)*90*(rand()%2?1:-1);
 	}
 	
-
 	glutMainLoop();
 	return 0;
 }

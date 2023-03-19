@@ -4,6 +4,9 @@
 #include<math.h>
 #include<time.h>
 
+#define GAME_TITLE "Color Game"
+
+
 
 /*Matrix for the vertices of Cubes*/
 static GLfloat vert[][4]={
@@ -156,7 +159,7 @@ int main(int argc, char *argv[]) {
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH);
 	glutInitWindowSize(320,240);
-	glutCreateWindow("Color Cube");
+	glutCreateWindow(GAME_TITLE);
 	glutDisplayFunc(display_func);
 	glutReshapeFunc(reshape_func);
 	glutKeyboardFunc(keyboard_func);

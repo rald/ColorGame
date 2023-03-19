@@ -130,10 +130,10 @@ void keyboard_func (unsigned char key, int x, int y) {
 	switch (key) {
 		case ' ':
 			if(c==0) { 
-				c=(rand()%4+1)*90/5; 
-				rxi=(rand()%2?1:-1)*5;
-				ryi=(rand()%2?1:-1)*5;
-				rzi=(rand()%2?1:-1)*5; 
+				c=(rand()%4+1)*90/2; 
+				rxi=(rand()%2?1:-1)*2;
+				ryi=(rand()%2?1:-1)*2;
+				rzi=(rand()%2?1:-1)*2; 
 				for(int i=0;i<3;i++) {
 					rx[i]=(rand()%4)*90;
 					ry[i]=(rand()%4)*90;
